@@ -1,0 +1,27 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Age</th>
+      <th scope="col">Score</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of students; let i = index">
+      <th scope="row">{{ i + 1 }}</th>
+      <td>{{ student.name }}</td>
+      <td>{{ student.age }}</td>
+      <td>{{ student.score }}</td>
+      <td>
+        <button  type="button" class="btn btn-sm btn-warning" [routerLink]="['/editstud', student._id]">
+          Edit
+        </button>        
+        <button *ngIf="isEditButton" type="button" class="btn btn-sm btn-danger" (click)="deleteStudent(student._id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div><button  type="button" class="btn btn-primary" routerLink="/addstud">Add Student</button></div>
+

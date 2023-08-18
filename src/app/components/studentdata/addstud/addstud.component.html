@@ -1,0 +1,21 @@
+<div class="round-box">
+    <form id="student-form" (ngSubmit)="addStudent()">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" [(ngModel)]="name" name="name" class="form-control" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" id="age" [(ngModel)]="age" name="age" class="form-control" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="score">Score</label>
+        <input type="number" id="score" [(ngModel)]="score" name="score" class="form-control" required>
+      </div>
+      
+      <button type="submit" class="btn btn-primary" >Submit</button>
+    </form>
+  </div>
+  

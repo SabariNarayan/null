@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+  }
+
+  .circle-container {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #17a2b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .form-container {
+    width: 90%;
+    max-width: 350px;
+  }
+  label{
+    padding-bottom: 10px;
+    padding-top: 5px;
+  }
+  button{
+    margin: 15px;
+    margin-left: -1px;
+  }
+
+  .reg{
+    color: aliceblue;
+  }
